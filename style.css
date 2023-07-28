@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+#page{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+#content{
+    padding: 10px;
+    background-color: rgb(159, 144, 144);
+    height: 400px;
+    width: 300px;
+    box-shadow: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#signupPage{
+    
+    background-color: rgb(186, 28, 28);
+    display: flex!important;
+    flex-direction: column;
+    gap: 16px;
+    
+    
+    
+    
+    
+}

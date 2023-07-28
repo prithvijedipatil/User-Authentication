@@ -1,0 +1,153 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Authentication</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+body {
+	color: #fff;
+	background: #344a71;
+	font-family: 'Roboto', sans-serif;
+}
+.form-control {		
+	min-height: 41px;
+	box-shadow: none;
+	border-color: #e1e4e5;
+}
+.form-control:focus {
+	border-color: #49c1a2;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 400px;
+	margin: 0 auto;
+	padding: 30px 0;
+    
+}
+#profile {
+	width: 400px;
+	margin: 0 auto;
+	padding: 30px 0;
+    
+}
+.signup-form form {
+	color: #9ba5a8;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form h2 {
+	color: #333;
+	font-weight: bold;
+	margin-top: 0;
+}
+.signup-form hr {
+	margin: 0 -30px 20px;
+}    
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form label {
+	font-weight: normal;
+	font-size: 14px;
+}
+.signup-form .btn, .signup-form .btn:active {
+	font-size: 16px;
+	font-weight: bold;
+	background: #49c1a2 !important;
+	border: none;
+	min-width: 140px;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+	background: #3cb094 !important;
+}
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #49c1a2;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+    <div id="content">
+<div id="signup-form">
+    <div>
+		
+		<p>Welcome back</p>
+        <h3>Sign Up to your account</h3>
+		<hr>
+        <div class="form-group">
+			<label>Full name</label>
+        	<input type="text" id="ipfullname" class="form-control" name="username" required="required">
+        </div>
+        <div class="form-group">
+			<label>Your Email</label>
+        	<input type="email" id="ipemail" class="form-control" name="email" required="required">
+        </div>
+		<div class="form-group">
+			<label>Your Password</label>
+            <input type="password" id="ippassword" class="form-control"  required="required">
+        </div>
+		<div class="form-group">
+			<label>Confirm Password</label>
+            <input type="password" class="form-control" name="confirm_password" required="required">
+        </div>
+		<div class="form-group">
+            <button  id="signupbtn" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+        </div>
+		<p class="small text-center" id="error">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a></p>
+    </div>
+	<div class="text-center">Don't have an account? <a href="#">Signup here</a></div>
+</div>
+
+<!-- profile section -->
+<div id="profilepage">
+    <div>
+		<h2>Sign up Successful</h2>
+		<p>Profile</p>
+        <i class="fa-light fa-user"></i>
+
+		<hr>
+        <div class="form-group">
+			<h4 id="dispfullname"></h4>
+        
+        </div>
+        <div class="form-group">
+			<h4 id="youremail"></h4>
+        	
+        </div>
+		<div class="form-group">
+			<h4 id="token"></h4>
+            
+        </div>
+		<div class="form-group">
+			<h4 id="yourpassword"></h4>
+            
+        </div>
+		<div class="form-group">
+            <button  id="profilelogout" class="btn btn-primary btn-block btn-lg">Logout</button>
+        </div>
+		
+    </div>
+	
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
