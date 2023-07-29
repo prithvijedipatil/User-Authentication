@@ -7,14 +7,39 @@
   <link rel="stylesheet" href="style.css">
   <style>
 body {
-	color: #fff;
-	background: #344a71;
+	color: #151313;
+	background: #ffffff;
 	font-family: 'Roboto', sans-serif;
 }
+#content{
+  background-color: #3cb094;
+  margin-top: 150px;
+  margin-left: 175px;
+  height: 500px;
+}
+#ipfullname{
+  border-radius: 10px;
+  box-shadow: none;
+}
+#ipemail{
+  border-radius: 10px;
+  box-shadow: none;
+}
+#ippassword{
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+#ipcpassword{
+  border-radius: 10px;
+  box-shadow: none;
+}
+
 .form-control {		
 	min-height: 41px;
 	box-shadow: none;
 	border-color: #e1e4e5;
+  border-radius: 10px;
 }
 .form-control:focus {
 	border-color: #49c1a2;
@@ -22,12 +47,26 @@ body {
 .form-control, .btn {        
 	border-radius: 3px;
 }
-.signup-form {
-	width: 400px;
+#signup-form {
+	width: 200px;
 	margin: 0 auto;
 	padding: 30px 0;
+  
     
 }
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+#signupcontainer{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+
 #profile {
 	width: 400px;
 	margin: 0 auto;
@@ -36,7 +75,7 @@ body {
 }
 .signup-form form {
 	color: #9ba5a8;
-	border-radius: 3px;
+	border-radius: 10px;
 	margin-bottom: 15px;
 	background: #fff;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
@@ -56,6 +95,12 @@ body {
 .signup-form label {
 	font-weight: normal;
 	font-size: 14px;
+  
+}
+
+#textcntr{
+  margin-top: 15px;
+  font-size: 12px;
 }
 .signup-form .btn, .signup-form .btn:active {
 	font-size: 16px;
@@ -87,11 +132,11 @@ body {
 
     <div id="content">
 <div id="signup-form">
-    <div>
+    <div id="signupcontainer">
 		
 		<p>Welcome back</p>
         <h3>Sign Up to your account</h3>
-		<hr>
+		
         <div class="form-group">
 			<label>Full name</label>
         	<input type="text" id="ipfullname" class="form-control" name="username" required="required">
@@ -106,14 +151,14 @@ body {
         </div>
 		<div class="form-group">
 			<label>Confirm Password</label>
-            <input type="password" class="form-control" name="confirm_password" required="required">
+            <input id="ipcpassword"type="password" class="form-control" name="confirm_password" required="required">
         </div>
 		<div class="form-group">
             <button  id="signupbtn" class="btn btn-primary btn-block btn-lg">Sign Up</button>
         </div>
-		<p class="small text-center" id="error">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a></p>
+		 
     </div>
-	<div class="text-center">Don't have an account? <a href="#">Signup here</a></div>
+	<div id="textcntr" class="text-center">Don't have an account? <a href="#">Signup here</a></div>
 </div>
 
 <!-- profile section -->
