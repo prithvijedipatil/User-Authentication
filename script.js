@@ -13,7 +13,7 @@ const propassword = document.getElementById('yourpassword');
 const proemail = document.getElementById('youremail');
 const protoken = document.getElementById('token');
 
-
+//checking accestoken
 
 if (accessToken) {
   
